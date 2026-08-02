@@ -68,13 +68,13 @@ const TRANSLATIONS = {
       eyebrow: "Contactează-ne", h2: "Solicită o ofertă",
       p: "Echipa noastră vă răspunde în cel mai scurt timp cu o ofertă personalizată pentru nevoile tale de transport frigorific.",
       email_label: "Email", phone_label: "Telefon", website_label: "Website",
-      form_note: "Prin trimitere se deschide clientul tău de email cu mesajul precompletat."
+      form_note: "Solicitarea se trimite direct către echipa noastră."
     },
     form: {
       name_label: "Nume complet *", email_label: "Email *", type_label: "Tip transport",
       type_placeholder: "Selectați tipul de transport...",
       opt1: "Transport frigorific standard", opt2: "Double Deck", opt3: "Blumenbrete (flori/plante)", opt4: "Aplicare ca șofer",
-      details_label: "Detalii solicitare *", submit: "Trimite Solicitarea", hp_label: "Nu completați acest câmp"
+      details_label: "Detalii solicitare *", submit: "Trimite Solicitarea", hp_label: "Nu completați acest câmp", success: "Mulțumim! Solicitarea a fost trimisă cu succes. Vă vom contacta în curând."
     },
     footer: {
       p: "Servicii profesionale de transport frigorific în toată Europa. Fiabilitate, precizie și temperaturi controlate pentru marfa dumneavoastră.",
@@ -144,13 +144,13 @@ const TRANSLATIONS = {
       eyebrow: "Contact Us", h2: "Request a Quote",
       p: "Our team will get back to you as soon as possible with a personalized quote for your refrigerated transport needs.",
       email_label: "Email", phone_label: "Phone", website_label: "Website",
-      form_note: "Submitting opens your email client with the message pre-filled."
+      form_note: "Your request is sent directly to our team."
     },
     form: {
       name_label: "Full Name *", email_label: "Email *", type_label: "Transport Type",
       type_placeholder: "Select transport type...",
       opt1: "Standard refrigerated transport", opt2: "Double Deck", opt3: "Blumenbrete (flowers/plants)", opt4: "Driver application",
-      details_label: "Request Details *", submit: "Send Request", hp_label: "Please leave this field empty"
+      details_label: "Request Details *", submit: "Send Request", hp_label: "Please leave this field empty", success: "Thank you! Your request has been sent successfully. We'll be in touch soon."
     },
     footer: {
       p: "Professional refrigerated transport services across Europe. Reliability, precision and controlled temperatures for your cargo.",
@@ -220,13 +220,13 @@ const TRANSLATIONS = {
       eyebrow: "Kontaktieren Sie uns", h2: "Angebot anfordern",
       p: "Unser Team meldet sich schnellstmöglich mit einem individuellen Angebot für Ihren Kühltransportbedarf.",
       email_label: "E-Mail", phone_label: "Telefon", website_label: "Webseite",
-      form_note: "Beim Absenden öffnet sich Ihr E-Mail-Programm mit der vorausgefüllten Nachricht."
+      form_note: "Ihre Anfrage wird direkt an unser Team gesendet."
     },
     form: {
       name_label: "Vollständiger Name *", email_label: "E-Mail *", type_label: "Transportart",
       type_placeholder: "Transportart auswählen...",
       opt1: "Standard-Kühltransport", opt2: "Double Deck", opt3: "Blumenbrete (Blumen/Pflanzen)", opt4: "Bewerbung als Fahrer",
-      details_label: "Anfragedetails *", submit: "Anfrage senden", hp_label: "Bitte dieses Feld leer lassen"
+      details_label: "Anfragedetails *", submit: "Anfrage senden", hp_label: "Bitte dieses Feld leer lassen", success: "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze."
     },
     footer: {
       p: "Professionelle Kühltransportdienstleistungen in ganz Europa. Zuverlässigkeit, Präzision und kontrollierte Temperaturen für Ihre Fracht.",
@@ -296,13 +296,13 @@ const TRANSLATIONS = {
       eyebrow: "Contattaci", h2: "Richiedi un preventivo",
       p: "Il nostro team vi risponderà al più presto con un preventivo personalizzato per le vostre esigenze di trasporto frigorifero.",
       email_label: "Email", phone_label: "Telefono", website_label: "Sito web",
-      form_note: "L'invio apre il tuo client email con il messaggio precompilato."
+      form_note: "La tua richiesta viene inviata direttamente al nostro team."
     },
     form: {
       name_label: "Nome completo *", email_label: "Email *", type_label: "Tipo di trasporto",
       type_placeholder: "Seleziona il tipo di trasporto...",
       opt1: "Trasporto frigorifero standard", opt2: "Double Deck", opt3: "Blumenbrete (fiori/piante)", opt4: "Candidatura come autista",
-      details_label: "Dettagli richiesta *", submit: "Invia richiesta", hp_label: "Non compilare questo campo"
+      details_label: "Dettagli richiesta *", submit: "Invia richiesta", hp_label: "Non compilare questo campo", success: "Grazie! La tua richiesta è stata inviata con successo. Ti contatteremo presto."
     },
     footer: {
       p: "Servizi professionali di trasporto frigorifero in tutta Europa. Affidabilità, precisione e temperature controllate per la vostra merce.",
