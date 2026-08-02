@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atom Logistic – Transport Frigorific Europa</title>
-<meta name="description" content="Atom Logistic oferă servicii de transport frigorific comunitar în toată Europa. Flotă Mercedes Actros cu semiremorci Schmitz Cargobull Double Deck și Blumenbrete.">
-<meta property="og:title" content="Atom Logistic – Transport Frigorific Europa">
-<meta property="og:description" content="Servicii profesionale de transport frigorific în toată Europa cu flotă modernă Mercedes Actros.">
+<title data-i18n="meta.title">Atom Logistic – Transport Frigorific Europa</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Atom Logistic oferă servicii de transport frigorific comunitar în toată Europa. Flotă DAF & MAN cu semiremorci frigorifice Schmitz Cargobull și Krone Double Deck și Blumenbrete.">
+<meta property="og:title" data-i18n-attr="content:meta.title" content="Atom Logistic – Transport Frigorific Europa">
+<meta property="og:description" data-i18n-attr="content:meta.description" content="Servicii profesionale de transport frigorific în toată Europa cu flotă modernă DAF & MAN.">
 <meta property="og:image" content="/logo.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +21,20 @@
       <img src="logo.jpg" alt="Atom Logistic">
     </a>
     <nav class="main-nav" aria-label="Navigare principală">
-      <a href="#servicii">Servicii</a>
-      <a href="#flota">Flotă</a>
-      <a href="#cariere">Cariere</a>
-      <a href="#despre">Despre noi</a>
-      <a href="#contact">Contact</a>
+      <a href="#servicii" data-i18n="nav.servicii">Servicii</a>
+      <a href="#flota" data-i18n="nav.flota">Flotă</a>
+      <a href="#cariere" data-i18n="nav.cariere">Cariere</a>
+      <a href="#despre" data-i18n="nav.despre">Despre noi</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="header-actions">
       <div class="lang-switch" aria-label="Limbă">
-        <button class="active">RO</button>
-        <button>EN</button>
-        <button>DE</button>
-        <button>IT</button>
+        <button class="active" data-lang="ro">RO</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="de">DE</button>
+        <button data-lang="it">IT</button>
       </div>
-      <a href="#contact" class="btn btn-outline-navy">Solicită Ofertă</a>
+      <a href="#contact" class="btn btn-outline-navy" data-i18n="nav.cta">Solicită Ofertă</a>
       <button class="nav-toggle" aria-label="Deschide meniul" id="navToggle">
         <span></span><span></span><span></span>
       </button>
@@ -48,24 +48,24 @@
   <section class="hero">
     <div class="container">
       <div class="hero-copy">
-        <div class="eyebrow" style="color:#8FC1EE">Transport Frigorific · Europa</div>
-        <h1>Calitate la rece,<br>în toată <span class="accent">Europa</span></h1>
-        <p>Transportăm marfa dumneavoastră frigorificată cu precizie și siguranță. Flotă modernă, temperaturi controlate, trasee comunitare confirmate.</p>
+        <div class="eyebrow" style="color:#8FC1EE" data-i18n="hero.eyebrow">Transport Frigorific · Europa</div>
+        <h1><span data-i18n="hero.h1_l1">Calitate la rece,</span><br><span data-i18n="hero.h1_l2">în toată</span> <span class="accent" data-i18n="hero.h1_accent">Europa</span></h1>
+        <p data-i18n="hero.p">Transportăm marfa dumneavoastră frigorificată cu precizie și siguranță. Flotă modernă, temperaturi controlate, trasee comunitare confirmate.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Solicită Ofertă</a>
-          <a href="#servicii" class="btn btn-outline">Descoperă Serviciile</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_primary">Solicită Ofertă</a>
+          <a href="#servicii" class="btn btn-outline" data-i18n="hero.btn_outline">Descoperă Serviciile</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="temp-gauge">
-          <div class="temp-gauge-label">Interval temperatură controlată</div>
+          <div class="temp-gauge-label" data-i18n="hero.gauge_label">Interval temperatură controlată</div>
           <div class="temp-range"><span>−28°C</span><span>+28°C</span></div>
           <div class="temp-strip" role="img" aria-label="Interval de temperatură de la minus 28 la plus 28 de grade Celsius"></div>
           <div class="gauge-stats">
-            <div class="gauge-stat"><div class="num">10</div><div class="lbl">Camioane Actros</div></div>
-            <div class="gauge-stat"><div class="num">11+</div><div class="lbl">Țări acoperite</div></div>
-            <div class="gauge-stat"><div class="num">100%</div><div class="lbl">Temperatură controlată</div></div>
-            <div class="gauge-stat"><div class="num">24/7</div><div class="lbl">Disponibilitate</div></div>
+            <div class="gauge-stat"><div class="num">10</div><div class="lbl" data-i18n="hero.stat1">Camioane DAF & MAN</div></div>
+            <div class="gauge-stat"><div class="num">11+</div><div class="lbl" data-i18n="hero.stat2">Țări acoperite</div></div>
+            <div class="gauge-stat"><div class="num">100%</div><div class="lbl" data-i18n="hero.stat3">Temperatură controlată</div></div>
+            <div class="gauge-stat"><div class="num">24/7</div><div class="lbl" data-i18n="hero.stat4">Disponibilitate</div></div>
           </div>
         </div>
       </div>
@@ -77,39 +77,39 @@
   <section id="servicii">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Ce oferim</div>
-        <h2>Servicii de transport frigorific</h2>
-        <p>Suntem specializați exclusiv în transportul la temperatură controlată, cu echipamente dedicate pentru fiecare tip de marfă.</p>
+        <div class="eyebrow" data-i18n="services.eyebrow">Ce oferim</div>
+        <h2 data-i18n="services.h2">Servicii de transport frigorific</h2>
+        <p data-i18n="services.p">Suntem specializați exclusiv în transportul la temperatură controlată, cu echipamente dedicate pentru fiecare tip de marfă.</p>
       </div>
 
       <div class="services-grid">
         <div class="service-card">
-          <h3><span class="idx">01</span> Transport Frigorific</h3>
-          <p>Transport profesional la temperaturi controlate între −28°C și +28°C. Ideal pentru produse alimentare, farmaceutice și perisabile ce necesită lanț frigorific continuu.</p>
+          <h3><span class="idx">01</span> <span data-i18n="services.s1_title">Transport Frigorific</span></h3>
+          <p data-i18n="services.s1_p">Transport profesional la temperaturi controlate între −28°C și +28°C. Ideal pentru produse alimentare, farmaceutice și perisabile ce necesită lanț frigorific continuu.</p>
           <ul>
-            <li>Temperaturi −28°C până la +28°C</li>
-            <li>Monitorizare GPS în timp real</li>
-            <li>Certificare ATP valabilă</li>
-            <li>Documentație completă CMR</li>
+            <li data-i18n="services.s1_li1">Temperaturi −28°C până la +28°C</li>
+            <li data-i18n="services.s1_li2">Monitorizare GPS în timp real</li>
+            <li data-i18n="services.s1_li3">Certificare ATP valabilă</li>
+            <li data-i18n="services.s1_li4">Documentație completă CMR</li>
           </ul>
         </div>
 
         <div class="service-card">
-          <h3><span class="idx">02</span> Double Deck</h3>
-          <p>Semiremorcile Schmitz Cargobull Double Deck permit transportul pe două niveluri, maximizând capacitatea de încărcare cu până la 33 de europaleți pe nivel.</p>
-          <span class="service-tag">2 niveluri · capacitate maximă</span>
+          <h3><span class="idx">02</span> <span data-i18n="services.s2_title">Double Deck</span></h3>
+          <p data-i18n="services.s2_p">Semiremorcile frigorifice Schmitz Cargobull și Krone Double Deck permit transportul pe două niveluri, maximizând capacitatea de încărcare cu până la 33 de europaleți pe nivel.</p>
+          <span class="service-tag" data-i18n="services.s2_tag">2 niveluri · capacitate maximă</span>
         </div>
 
         <div class="service-card">
-          <h3><span class="idx">03</span> Blumenbrete</h3>
-          <p>Configurație Blumenbrete dedicată transportului florilor și plantelor vii, cu control precis al temperaturii și umidității pentru produse floricole sensibile.</p>
-          <span class="service-tag">Flori & Plante · specializare floricultură</span>
+          <h3><span class="idx">03</span> <span data-i18n="services.s3_title">Blumenbrete</span></h3>
+          <p data-i18n="services.s3_p">Configurație Blumenbrete dedicată transportului florilor și plantelor vii, cu control precis al temperaturii și umidității pentru produse floricole sensibile.</p>
+          <span class="service-tag" data-i18n="services.s3_tag">Flori & Plante · specializare floricultură</span>
         </div>
 
         <div class="service-card">
-          <h3><span class="idx">04</span> Transport Comunitar European</h3>
-          <p>Operăm rute regulate în toată Uniunea Europeană, asigurând transport frigorific intra-comunitar conform normelor europene. Licență de transport internațional, documente CMR și asigurare marfă incluse.</p>
-          <div class="countries-row">
+          <h3><span class="idx">04</span> <span data-i18n="services.s4_title">Transport Comunitar European</span></h3>
+          <p data-i18n="services.s4_p">Operăm rute regulate în toată Uniunea Europeană, asigurând transport frigorific intra-comunitar conform normelor europene. Licență de transport internațional, documente CMR și asigurare marfă incluse.</p>
+          <div class="countries-row" id="countriesRow">
             <span class="country-pill">Germania</span>
             <span class="country-pill">Franța</span>
             <span class="country-pill">Italia</span>
@@ -132,52 +132,59 @@
   <section id="flota" class="section-alt">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Parcul auto</div>
-        <h2>Flotă modernă & fiabilă</h2>
-        <p>Parcul nostru auto cuprinde 10 tractoare Mercedes-Benz Actros echipate cu semiremorci frigorifice Schmitz Cargobull de ultimă generație, verificate periodic și dotate cu monitorizare de temperatură în timp real.</p>
+        <div class="eyebrow" data-i18n="fleet.eyebrow">Parcul auto</div>
+        <h2 data-i18n="fleet.h2">Flotă modernă & fiabilă</h2>
+        <p data-i18n="fleet.p">Parcul nostru auto cuprinde 10 tractoare DAF și MAN echipate cu remorci frigorifice Schmitz Cargobull și Krone de ultimă generație, verificate periodic și dotate cu monitorizare de temperatură în timp real.</p>
       </div>
 
       <div class="fleet-layout">
         <div class="fleet-list">
           <div class="fleet-item">
             <div>
-              <h4>Mercedes-Benz Actros</h4>
-              <p>Tractor — motor Euro 6, consum optimizat, cabină mare</p>
+              <h4>DAF XF</h4>
+              <p data-i18n="fleet.item1_desc">Tractor — motor Euro 6, consum optimizat, cabină mare</p>
             </div>
-            <div class="count">10 unități</div>
+            <div class="count"><span>5</span> <span data-i18n="fleet.count_units">unități</span></div>
           </div>
           <div class="fleet-item">
             <div>
-              <h4>Schmitz Cargobull S.KO</h4>
-              <p>Semiremorcă frigorifică Double Deck — 2 niveluri de încărcare</p>
+              <h4>MAN TGX</h4>
+              <p data-i18n="fleet.item2_desc">Tractor — motor Euro 6, consum optimizat, cabină mare</p>
             </div>
-            <div class="count">10 remorci</div>
+            <div class="count"><span>5</span> <span data-i18n="fleet.count_units">unități</span></div>
           </div>
           <div class="fleet-item">
             <div>
-              <h4>Configurație Blumenbrete</h4>
-              <p>Adaptate pentru flori și plante vii — control umiditate</p>
+              <h4 data-i18n="fleet.item3_title">Remorci frigorifice Schmitz Cargobull & Krone</h4>
+              <p data-i18n="fleet.item3_desc">Semiremorci frigorifice Double Deck — 2 niveluri de încărcare</p>
             </div>
-            <div class="count">disponibil</div>
+            <div class="count"><span>10</span> <span data-i18n="fleet.count_trailers">remorci</span></div>
+          </div>
+          <div class="fleet-item">
+            <div>
+              <h4 data-i18n="fleet.item4_title">Configurație Blumenbrete</h4>
+              <p data-i18n="fleet.item4_desc">Adaptate pentru flori și plante vii — control umiditate</p>
+            </div>
+            <div class="count" data-i18n="fleet.count_available">disponibil</div>
           </div>
         </div>
 
         <div class="route-panel">
-          <h4>Distribuție flotă pe rute</h4>
+          <h4 data-i18n="fleet.route_title">Distribuție flotă pe rute</h4>
           <div class="route-bar-row">
-            <div class="route-bar-label"><span>Germania – România</span><span>92%</span></div>
+            <div class="route-bar-label"><span data-i18n="fleet.route1">Germania – România</span><span>92%</span></div>
             <div class="route-bar-track"><div class="route-bar-fill" style="width:92%"></div></div>
           </div>
           <div class="route-bar-row">
-            <div class="route-bar-label"><span>Franța – România</span><span>76%</span></div>
+            <div class="route-bar-label"><span data-i18n="fleet.route2">Franța – România</span><span>76%</span></div>
             <div class="route-bar-track"><div class="route-bar-fill" style="width:76%"></div></div>
           </div>
           <div class="route-bar-row">
-            <div class="route-bar-label"><span>Italia – România</span><span>68%</span></div>
+            <div class="route-bar-label"><span data-i18n="fleet.route3">Italia – România</span><span>68%</span></div>
             <div class="route-bar-track"><div class="route-bar-fill" style="width:68%"></div></div>
           </div>
           <div class="route-bar-row">
-            <div class="route-bar-label"><span>Alte destinații UE</span><span>44%</span></div>
+            <div class="route-bar-label"><span data-i18n="fleet.route4">Alte destinații UE</span><span>44%</span></div>
             <div class="route-bar-track"><div class="route-bar-fill" style="width:44%"></div></div>
           </div>
         </div>
@@ -190,29 +197,29 @@
     <div class="container careers-layout">
       <div>
         <div class="section-head">
-          <div class="eyebrow" style="color:#8FC1EE">Cariere</div>
-          <h2>Angajăm șoferi profesioniști</h2>
-          <p>Căutăm șoferi profesioniști de camion pentru distribuție internațională. Oferim contracte stabile, camioane Mercedes Actros de ultimă generație și condiții de lucru de top.</p>
+          <div class="eyebrow" style="color:#8FC1EE" data-i18n="careers.eyebrow">Cariere</div>
+          <h2 data-i18n="careers.h2">Angajăm șoferi profesioniști</h2>
+          <p data-i18n="careers.p">Căutăm șoferi profesioniști de camion pentru distribuție internațională. Oferim contracte stabile, camioane DAF și MAN de ultimă generație și condiții de lucru de top.</p>
         </div>
         <ul>
-          <li>Camioane Mercedes Actros de ultimă generație</li>
-          <li>Salariu atractiv plus diurnă</li>
-          <li>Trasee fixe și planificare eficientă</li>
-          <li>Echipament și sprijin complet asigurate</li>
+          <li data-i18n="careers.li1">Camioane DAF și MAN de ultimă generație</li>
+          <li data-i18n="careers.li2">Salariu atractiv plus diurnă</li>
+          <li data-i18n="careers.li3">Trasee fixe și planificare eficientă</li>
+          <li data-i18n="careers.li4">Echipament și sprijin complet asigurate</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Aplică Acum</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="careers.btn">Aplică Acum</a>
       </div>
 
       <div>
-        <div class="eyebrow" style="color:#8FC1EE">Distribuție internațională</div>
+        <div class="eyebrow" style="color:#8FC1EE" data-i18n="careers.eyebrow2">Distribuție internațională</div>
         <div class="country-grid">
-          <div class="country-chip"><div class="code">A</div><div class="name">Austria</div></div>
-          <div class="country-chip"><div class="code">D</div><div class="name">Germania</div></div>
-          <div class="country-chip"><div class="code">CH</div><div class="name">Elveția</div></div>
-          <div class="country-chip"><div class="code">F</div><div class="name">Franța</div></div>
-          <div class="country-chip"><div class="code">I</div><div class="name">Italia</div></div>
-          <div class="country-chip"><div class="code">BNL</div><div class="name">Benelux</div></div>
-          <div class="country-chip" style="grid-column: span 3;"><div class="code">UK</div><div class="name">Marea Britanie</div></div>
+          <div class="country-chip"><div class="code">A</div><div class="name" data-i18n="careers.c1">Austria</div></div>
+          <div class="country-chip"><div class="code">D</div><div class="name" data-i18n="careers.c2">Germania</div></div>
+          <div class="country-chip"><div class="code">CH</div><div class="name" data-i18n="careers.c3">Elveția</div></div>
+          <div class="country-chip"><div class="code">F</div><div class="name" data-i18n="careers.c4">Franța</div></div>
+          <div class="country-chip"><div class="code">I</div><div class="name" data-i18n="careers.c5">Italia</div></div>
+          <div class="country-chip"><div class="code">BNL</div><div class="name" data-i18n="careers.c6">Benelux</div></div>
+          <div class="country-chip" style="grid-column: span 3;"><div class="code">UK</div><div class="name" data-i18n="careers.c7">Marea Britanie</div></div>
         </div>
       </div>
     </div>
@@ -222,31 +229,31 @@
   <section id="despre">
     <div class="container">
       <div class="section-head center">
-        <div class="eyebrow">Despre noi</div>
-        <h2>De ce Atom Logistic?</h2>
-        <p>Suntem specializați exclusiv în transportul frigorific, cu o flotă omogenă și echipamente de ultimă generație pentru lanțul frigorific european.</p>
+        <div class="eyebrow" data-i18n="about.eyebrow">Despre noi</div>
+        <h2 data-i18n="about.h2">De ce Atom Logistic?</h2>
+        <p data-i18n="about.p">Suntem specializați exclusiv în transportul frigorific, cu o flotă omogenă și echipamente de ultimă generație pentru lanțul frigorific european.</p>
       </div>
 
       <div class="about-grid">
         <div class="about-card">
           <div class="num">01</div>
-          <h4>Lanț Frigorific Complet</h4>
-          <p>Temperatura rămâne constantă de la încărcare până la livrare. Zero întreruperi ale lanțului frigorific.</p>
+          <h4 data-i18n="about.c1_title">Lanț Frigorific Complet</h4>
+          <p data-i18n="about.c1_p">Temperatura rămâne constantă de la încărcare până la livrare. Zero întreruperi ale lanțului frigorific.</p>
         </div>
         <div class="about-card">
           <div class="num">02</div>
-          <h4>Siguranță & Fiabilitate</h4>
-          <p>Camioane Actros cu sisteme de siguranță avansate, asigurare marfă CMR și monitorizare GPS continuu.</p>
+          <h4 data-i18n="about.c2_title">Siguranță & Fiabilitate</h4>
+          <p data-i18n="about.c2_p">Camioane DAF și MAN cu sisteme de siguranță avansate, asigurare marfă CMR și monitorizare GPS continuu.</p>
         </div>
         <div class="about-card">
           <div class="num">03</div>
-          <h4>Rețea Europeană</h4>
-          <p>Rute regulate în toată UE. Livrăm oriunde în Europa cu documentație completă și trasabilitate deplină.</p>
+          <h4 data-i18n="about.c3_title">Rețea Europeană</h4>
+          <p data-i18n="about.c3_p">Rute regulate în toată UE. Livrăm oriunde în Europa cu documentație completă și trasabilitate deplină.</p>
         </div>
         <div class="about-card">
           <div class="num">04</div>
-          <h4>Punctualitate</h4>
-          <p>Respectăm termenele de livrare. Comunicare transparentă și actualizări în timp real privind statusul transportului.</p>
+          <h4 data-i18n="about.c4_title">Punctualitate</h4>
+          <p data-i18n="about.c4_p">Respectăm termenele de livrare. Comunicare transparentă și actualizări în timp real privind statusul transportului.</p>
         </div>
       </div>
     </div>
@@ -256,54 +263,54 @@
   <section id="contact" class="section-alt">
     <div class="container contact-layout">
       <div class="contact-info">
-        <div class="eyebrow">Contactează-ne</div>
-        <h2>Solicită o ofertă</h2>
-        <p>Echipa noastră vă răspunde în cel mai scurt timp cu o ofertă personalizată pentru nevoile tale de transport frigorific.</p>
+        <div class="eyebrow" data-i18n="contact.eyebrow">Contactează-ne</div>
+        <h2 data-i18n="contact.h2">Solicită o ofertă</h2>
+        <p data-i18n="contact.p">Echipa noastră vă răspunde în cel mai scurt timp cu o ofertă personalizată pentru nevoile tale de transport frigorific.</p>
 
         <div class="contact-detail">
-          <span class="k">Email</span>
+          <span class="k" data-i18n="contact.email_label">Email</span>
           <a class="v" href="mailto:office@atom-logistic.eu">office@atom-logistic.eu</a>
         </div>
         <div class="contact-detail">
-          <span class="k">Telefon</span>
+          <span class="k" data-i18n="contact.phone_label">Telefon</span>
           <a class="v" href="tel:+4915510229077">+49 155 1022 9077</a>
         </div>
         <div class="contact-detail">
-          <span class="k">Website</span>
+          <span class="k" data-i18n="contact.website_label">Website</span>
           <span class="v">atom-logistic.eu</span>
         </div>
       </div>
 
       <form class="contact-form" id="contactForm" action="mailto:office@atom-logistic.eu" method="post" enctype="text/plain">
         <div class="form-row hp-field" aria-hidden="true">
-          <label for="company">Nu completați acest câmp</label>
+          <label for="company" data-i18n="form.hp_label">Nu completați acest câmp</label>
           <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
         </div>
 
         <div class="form-row">
-          <label for="name">Nume complet *</label>
+          <label for="name" data-i18n="form.name_label">Nume complet *</label>
           <input type="text" id="name" name="name" required>
         </div>
         <div class="form-row">
-          <label for="email">Email *</label>
+          <label for="email" data-i18n="form.email_label">Email *</label>
           <input type="email" id="email" name="email" required>
         </div>
         <div class="form-row">
-          <label for="type">Tip transport</label>
+          <label for="type" data-i18n="form.type_label">Tip transport</label>
           <select id="type" name="type">
-            <option value="">Selectați tipul de transport...</option>
-            <option>Transport frigorific standard</option>
-            <option>Double Deck</option>
-            <option>Blumenbrete (flori/plante)</option>
-            <option>Aplicare ca șofer</option>
+            <option value="" data-i18n="form.type_placeholder">Selectați tipul de transport...</option>
+            <option data-i18n="form.opt1">Transport frigorific standard</option>
+            <option data-i18n="form.opt2">Double Deck</option>
+            <option data-i18n="form.opt3">Blumenbrete (flori/plante)</option>
+            <option data-i18n="form.opt4">Aplicare ca șofer</option>
           </select>
         </div>
         <div class="form-row">
-          <label for="details">Detalii solicitare *</label>
+          <label for="details" data-i18n="form.details_label">Detalii solicitare *</label>
           <textarea id="details" name="details" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%">Trimite Solicitarea</button>
-        <p class="form-note">Prin trimitere se deschide clientul tău de email cu mesajul precompletat.</p>
+        <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.submit">Trimite Solicitarea</button>
+        <p class="form-note" data-i18n="contact.form_note">Prin trimitere se deschide clientul tău de email cu mesajul precompletat.</p>
       </form>
     </div>
   </section>
@@ -315,35 +322,36 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><img src="logo.jpg" alt="Atom Logistic"></div>
-        <p>Servicii profesionale de transport frigorific în toată Europa. Fiabilitate, precizie și temperaturi controlate pentru marfa dumneavoastră.</p>
+        <p data-i18n="footer.p">Servicii profesionale de transport frigorific în toată Europa. Fiabilitate, precizie și temperaturi controlate pentru marfa dumneavoastră.</p>
       </div>
       <div class="footer-col">
-        <h5>Navigare</h5>
+        <h5 data-i18n="footer.nav_heading">Navigare</h5>
         <ul>
-          <li><a href="#servicii">Servicii</a></li>
-          <li><a href="#flota">Flotă</a></li>
-          <li><a href="#cariere">Cariere</a></li>
-          <li><a href="#despre">Despre noi</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#servicii" data-i18n="nav.servicii">Servicii</a></li>
+          <li><a href="#flota" data-i18n="nav.flota">Flotă</a></li>
+          <li><a href="#cariere" data-i18n="nav.cariere">Cariere</a></li>
+          <li><a href="#despre" data-i18n="nav.despre">Despre noi</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Servicii</h5>
+        <h5 data-i18n="footer.services_heading">Servicii</h5>
         <ul>
-          <li><a href="#servicii">Transport Frigorific</a></li>
-          <li><a href="#servicii">Double Deck</a></li>
-          <li><a href="#servicii">Blumenbrete</a></li>
-          <li><a href="#servicii">Transport Comunitar EU</a></li>
+          <li><a href="#servicii" data-i18n="services.s1_title">Transport Frigorific</a></li>
+          <li><a href="#servicii" data-i18n="services.s2_title">Double Deck</a></li>
+          <li><a href="#servicii" data-i18n="services.s3_title">Blumenbrete</a></li>
+          <li><a href="#servicii" data-i18n="services.s4_title">Transport Comunitar EU</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Atom Logistic. Toate drepturile rezervate.</span>
+      <span>© 2026 Atom Logistic. <span data-i18n="footer.rights">Toate drepturile rezervate.</span></span>
       <span>atom-logistic.eu</span>
     </div>
   </div>
 </footer>
 
+<script src="translations.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
