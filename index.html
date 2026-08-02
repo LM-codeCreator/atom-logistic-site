@@ -281,7 +281,8 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="contact">
         <div class="form-row hp-field" aria-hidden="true">
           <label for="company" data-i18n="form.hp_label">Nu completați acest câmp</label>
           <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
@@ -310,7 +311,8 @@
           <textarea id="details" name="details" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.submit">Trimite Solicitarea</button>
-        <p class="form-note" data-i18n="contact.form_note">Prin trimitere se deschide clientul tău de email cu mesajul precompletat.</p>
+        <p class="form-note" data-i18n="contact.form_note">Solicitarea se trimite direct către echipa noastră.</p>
+        <p class="form-note" id="formSuccess" style="display:none; color: var(--red); font-weight: 600;" data-i18n="form.success">Mulțumim! Solicitarea a fost trimisă cu succes.</p>
       </form>
     </div>
   </section>
