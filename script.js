@@ -20,37 +20,40 @@ if (navToggle && mainNav) {
   });
 }
 
-// ---------- Formular contact → mailto (fără avertisment "not secure") ----------
+// ---------- Formular contact → trimis direct pe server (Netlify Forms) ----------
 
 const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
 
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // capcană anti-spam: dacă e completat câmpul ascuns, nu trimitem nimic
-    const honeypot = contactForm.querySelector('#company');
-    if (honeypot && honeypot.value.trim() !== '') return;
+    const formData = new FormData(contactForm);
+    const payload = {};
+    formData.forEach((value, key) => { payload[key] = value; });
 
-    const name = contactForm.querySelector('#name')?.value.trim() || '';
-    const email = contactForm.querySelector('#email')?.value.trim() || '';
-    const type = contactForm.querySelector('#type')?.value.trim() || '';
-    const details = contactForm.querySelector('#details')?.value.trim() || '';
-
-    const subject = `Solicitare ofertă – ${name || 'Website'}`;
-    const bodyLines = [
-      `Nume: ${name}`,
-      `Email: ${email}`,
-      type ? `Tip transport: ${type}` : null,
-      '',
-      'Detalii:',
-      details
-    ].filter((line) => line !== null);
-
-    const mailtoUrl =
-      `mailto:office@atom-logistic.eu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-
-    window.location.href = mailtoUrl;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(payload)
+    })
+      .then(() => {
+        contactForm.reset();
+        contactForm.querySelectorAll('.form-row:not(.hp-field), button[type="submit"]').forEach((el) => {
+          el.style.display = 'none';
+        });
+        if (formSuccess) formSuccess.style.display = 'block';
+      })
+      .catch(() => {
+        alert('A apărut o eroare la trimitere. Te rugăm să încerci din nou sau să ne scrii direct la office@atom-logistic.eu');
+      });
   });
 }
 
