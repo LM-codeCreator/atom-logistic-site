@@ -20,6 +20,40 @@ if (navToggle && mainNav) {
   });
 }
 
+// ---------- Formular contact → mailto (fără avertisment "not secure") ----------
+
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // capcană anti-spam: dacă e completat câmpul ascuns, nu trimitem nimic
+    const honeypot = contactForm.querySelector('#company');
+    if (honeypot && honeypot.value.trim() !== '') return;
+
+    const name = contactForm.querySelector('#name')?.value.trim() || '';
+    const email = contactForm.querySelector('#email')?.value.trim() || '';
+    const type = contactForm.querySelector('#type')?.value.trim() || '';
+    const details = contactForm.querySelector('#details')?.value.trim() || '';
+
+    const subject = `Solicitare ofertă – ${name || 'Website'}`;
+    const bodyLines = [
+      `Nume: ${name}`,
+      `Email: ${email}`,
+      type ? `Tip transport: ${type}` : null,
+      '',
+      'Detalii:',
+      details
+    ].filter((line) => line !== null);
+
+    const mailtoUrl =
+      `mailto:office@atom-logistic.eu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+    window.location.href = mailtoUrl;
+  });
+}
+
 // ---------- Comutare limbă (i18n) ----------
 
 // citește o valoare imbricată dintr-un obiect folosind o cheie "a.b.c"
