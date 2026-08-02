@@ -14,6 +14,8 @@
   --red: #E1121F;
   --red-dark: #B80E19;
   --ice: #F5F8FC;
+  --page-bg: #F7F8FA;
+  --section-alt-bg: #EEF1F6;
   --frost: #E7EEF8;
   --steel: #55637A;
   --steel-light: #8B96A8;
@@ -35,7 +37,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   color: var(--navy-dark);
-  background: var(--white);
+  background: var(--page-bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -126,7 +128,7 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--white);
+  background: var(--page-bg);
   border-bottom: 1px solid var(--line);
 }
 
@@ -321,7 +323,7 @@ h1, h2, h3, h4 {
 /* ---------- Section shell ---------- */
 
 section { padding: 100px 0; }
-.section-alt { background: var(--ice); }
+.section-alt { background: var(--section-alt-bg); }
 
 .section-head {
   max-width: 640px;
@@ -681,7 +683,7 @@ section { padding: 100px 0; }
     top: 106px;
     left: 0;
     right: 0;
-    background: var(--white);
+    background: var(--page-bg);
     border-bottom: 1px solid var(--line);
     flex-direction: column;
     align-items: flex-start;
