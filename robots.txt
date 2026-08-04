@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atom-logistic.eu/sitemap.xml
